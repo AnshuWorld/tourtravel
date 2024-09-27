@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Travels</title>
+    
+</head>
+<body>
+    <nav class="p-5 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img class="object-cover max-w-18 max-h-12" src="logo.png" alt="Logo">
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12 text-xl">
+            <a href="#" class="font-medium hover:text-primary">Home</a>
+            <a href="#" class="font-medium hover:text-primary">Our Services</a>
+            <a href="#" class="font-medium hover:text-primary">About Us</a>
+            <a href="#" class="font-medium hover:text-primary">Contact Us</a>
+        </div>
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <span class="font-display font-medium">Call Now</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    
+    
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            y
+        </button>
+    
+        <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-18 max-h-12" src="logo.png" alt="Logo">
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <p class="text-black">y</p>
+                </button>
+            </div>
+            <div class="mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block">Our Services</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block">About Us</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block">Contact Us</a>
+            </div>
+            <div class="h-[1px] bg-gray-300"></div>
+        </div>
+    
+    </nav>
+    <script src="script.js"></script>
+
+</body>
+</html>
